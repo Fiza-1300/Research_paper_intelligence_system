@@ -1,11 +1,13 @@
-Research Paper Intelligence System
-Overview
+#Research Paper Intelligence System
+
+##Overview
 Research Paper Intelligence System is an AI-powered research assistant that helps users discover, analyze, and understand machine learning research papers through semantic search and large language models.
 The system indexes thousands of research papers by generating vector embeddings and storing them in a FAISS vector database. Instead of relying on keyword matching, it performs semantic retrieval to identify the most relevant papers for a given query.
 
 Beyond retrieval, the system automatically summarizes papers, extracts important keywords, generates structured research profiles using large language models, and provides an intelligent interface for exploring academic literature.
 
-Features
+##Features
+
 Semantic search using dense vector embeddings
 Retrieval-Augmented Generation (RAG) workflow
 FAISS-based vector database for efficient similarity search
@@ -16,7 +18,9 @@ Similarity-based paper ranking
 LangChain tool integration
 LLM-powered research assistant
 Intelligent recommendation of related papers
-System Architecture
+
+##System Architecture
+
 Research Papers
         │
         ▼
@@ -48,36 +52,41 @@ LLM-Based Paper Profiling
                 │
                 ▼
 Final AI Response
-Technologies Used
-Programming Language
+
+
+##Technologies Used
+
+###Programming Language
 Python
-Generative AI
+###Generative AI
 Google Gemini
 Groq API
 Llama 3.1 / Llama 3.3
-Retrieval-Augmented Generation (RAG)
+###Retrieval-Augmented Generation (RAG)
 FAISS
 Sentence Transformers
 Semantic Search
-Machine Learning
+###Machine Learning
 SentenceTransformer (all-MiniLM-L6-v2)
 Cosine Similarity
-NLP
+###NLP
 BART Summarization
 KeyBERT
 Hugging Face Datasets
-Frameworks
+###Frameworks
 LangChain
 LangChain Tools
 LangChain Agents
-Libraries
+###Libraries
 Pandas
 NumPy
 Scikit-learn
 Transformers
 FAISS
 Sentence Transformers
-Dataset
+
+
+##Dataset
 The project uses the ML-ArXiv-Papers dataset from Hugging Face.
 Dataset includes approximately:
 
@@ -85,7 +94,10 @@ Dataset includes approximately:
 Title
 Abstract
 Each paper is converted into embeddings and indexed inside FAISS for semantic retrieval.
-Project Workflow
+
+
+##Project Workflow
+
 Step 1
 Load the research paper dataset.
 Step 2
@@ -114,7 +126,9 @@ Best Suited Audience
 Estimated Reading Time
 Step 10
 Present the final ranked research recommendations.
-AI Capabilities
+
+##AI Capabilities
+
 The system provides:
 Semantic research paper search
 AI-generated paper summaries
@@ -123,7 +137,8 @@ Research paper recommendation
 Structured research analysis
 LLM-generated research insights
 Intelligent research assistant
-Sample Output
+
+##Sample Output
 For every retrieved paper the system generates:
 Similarity Score
 Paper Title
@@ -138,7 +153,9 @@ Key Contribution
 Difficulty Level
 Recommended Audience
 Estimated Reading Time
-Project Structure
+
+##Project Structure
+
 Research_Paper_Intelligence_System/
 │
 ├── data/
@@ -154,8 +171,8 @@ Research_Paper_Intelligence_System/
 ├── agent.py
 ├── requirements.txt
 └── README.md
-(Adjust this structure if your repository uses different file names.)
-Installation
+
+##Installation
 git clone https://github.com/Fiza-1300/Research_paper_intelligence_system.git
 
 cd Research_paper_intelligence_system
@@ -169,7 +186,9 @@ Windows
 venv\Scripts\activate
 Install dependencies:
 pip install -r requirements.txt
-Usage
+
+##Usage
+
 Run the main application:
 python app.py
 Example query:
@@ -180,7 +199,9 @@ Generate summaries
 Extract keywords
 Create structured AI research profiles
 Display ranked recommendations
-Future Enhancements
+
+##Future Enhancements
+
 Web application using Streamlit
 PDF upload and indexing
 Multi-document question answering
@@ -191,7 +212,9 @@ Hybrid search (BM25 + FAISS)
 Research graph visualization
 Persistent vector database support
 Conversational memory
-Skills Demonstrated
+
+##Skills Demonstrated
+
 Retrieval-Augmented Generation (RAG)
 Semantic Search
 Vector Databases
@@ -206,4 +229,6 @@ Embedding Models
 Generative AI
 Machine Learning
 Python
-License
+
+##License
+This project is intended for educational and research purposes.
